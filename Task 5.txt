@@ -1,0 +1,25 @@
+Задание 1:
+cat > pets
+cat > pack_animals
+cat pets pack_animals > animals
+mv animals > mans_friends
+
+Задание 2:
+mkdir animals
+mv mans_friends animals/
+
+Задание 3:
+wget https://dev.mysql.com/get/mysql-apt-config_0.8.23-1_all.deb
+dpkg -i mysql-apt-config_0.8.23-1_all.deb
+apt-get update
+apt-get install mysql-server
+
+Задание 4:
+dpkg --get-selections
+wget https://downloads.vivaldi.com/stable/vivaldi-stable_amd64.deb
+dpkg -i vivaldi-stable_amd64.deb
+apt -f install
+dpkg -l | grep -i vivaldi
+dpkg -r vivaldi-stable
+dpkg --purge vivaldi-stable
+dpkg -l|grep vivaldi
